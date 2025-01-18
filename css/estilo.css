@@ -1,0 +1,23 @@
+:root{
+    --fundo-padrão:#CCE7FF;
+    --fundo-div: #E6F7FF;
+
+    --cor-borda: #B3D8E9;
+
+    --tamanho-borda: 3px;
+    --tamanho-arredonda: 10px;
+    --tamanho-margem: 10px;
+    --tamanho-padding: 10px;
+}
+
+body {
+    background-color: var(--fundo-padrão);
+}
+
+div{
+    background-color: var(--fundo-div);
+    border: var(--tamanho-borda) solid var(--cor-borda);
+    padding: var(--tamanho-padding);
+    border-radius: var(--tamanho-arredonda);
+    margin: var(--tamanho-margem);
+}
