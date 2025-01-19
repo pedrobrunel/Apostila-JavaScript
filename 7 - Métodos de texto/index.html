@@ -17,7 +17,7 @@
     <!-- Cabeçalho da página -->
     <header>
         <div id="menuPrincipal">
-            <p><strong>Apostila JavaScript - Home</strong></p>
+            <h2><strong>Apostila JavaScript - Home</strong></h2>
         </div>   
     </header>
 
@@ -27,19 +27,39 @@
             <div id="divCodigos">
             <center>
             <h1 id="textoMaiusculo">Texto Aqui</h1>
-            <pre><code>const alteraMaiusculo = document.getElementById("textoMaiusculo")</code>
-            <code>alteraMaiusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</code></pre>
+            <p>const alteraMaiusculo = document.getElementById("textoMaiusculo")</p>
+            <p>alteraMaiusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</p>
             </center>    
             </div>
 
             <div id="divCodigos">
             <center>
             <h1 id="textoMinusculo"></h1>
-            <pre><code>const alteraMinusculo = document.getElementById("textoMinusculo")</code>
-            <code>alteraMinusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</code></pre>
-            </center>    
-
+            <p>const alteraMinusculo = document.getElementById("textoMinusculo")</p>
+            <p>alteraMinusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</p>
+            </center>   
             </div>
+
+            <div id="divCodigos">
+            <center>
+            <h1 id="tamanhoString"></h1>
+            <p>let mensagem = "O comprimento dessa váriavel é?"</p>
+            <p>const alteraH1Length = document.getElementById("tamanhoString")</p>
+            <p>alteraH1Length.textContent = `Tamanho do texto: ${mensagem.length}`</p>
+            </center>
+            </div>
+
+            <div id="divCodigos">
+            <center>
+            <h1 id="tamanhoNumero"></h1>
+            <p>let numeros = 123456</p>
+            <p>const alteraH1Numero = document.getElementById("tamanhoNumero")</p>
+            <p>alteraH1Numero.textContent = `Tamanho do número: ${String(numeros).length}`</p>
+            </center>
+            </div>            
+
+
+
 
                     
     </main>

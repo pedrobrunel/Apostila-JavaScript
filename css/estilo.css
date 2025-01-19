@@ -9,6 +9,7 @@
     --tamanho-margem: 10px;
     --tamanho-padding: 10px;
 
+    --fonteParagrafo: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -39,6 +40,14 @@ body {
 p {
     padding: 0;
     margin: 0;
+    font-family: var(--fonteParagrafo);
+    font-size: 0.8rem;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
 }
 
 h1{
@@ -64,4 +73,5 @@ main{
     padding: var(--tamanho-padding);
     border-radius: var(--tamanho-arredonda);
     margin: var(--tamanho-margem);  
+    width: 50%;
 }
