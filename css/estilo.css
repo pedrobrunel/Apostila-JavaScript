@@ -8,16 +8,60 @@
     --tamanho-arredonda: 10px;
     --tamanho-margem: 10px;
     --tamanho-padding: 10px;
+
 }
 
 body {
     background-color: var(--fundo-padrão);
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;    /* Centraliza verticalmente */
+    height: 100vh;          /* Faz o corpo ocupar a altura total da janela */
+    margin: 0;              /* Remove margens padrão do body */
+    height: 100vh;
+    padding: 0%;
 }
 
-div{
+#menuPrincipal{
+    background-color: var(--fundo-div);
+    margin: var(--tamanho-margem);
+    padding: var(--tamanho-padding);
+    border: var(--tamanho-borda) solid var(--cor-borda);
+    border-radius: var(--tamanho-arredonda);
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%); /* Ajusta o ponto de ancoragem para o centro */
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    padding: 0;
+    margin: 1vh;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divCodigos:first-of-type{
+    margin-top: 12vh;
+}
+
+#divCodigos{
     background-color: var(--fundo-div);
     border: var(--tamanho-borda) solid var(--cor-borda);
     padding: var(--tamanho-padding);
     border-radius: var(--tamanho-arredonda);
-    margin: var(--tamanho-margem);
+    margin: var(--tamanho-margem);  
 }

@@ -16,39 +16,37 @@
 
     <!-- Cabeçalho da página -->
     <header>
-        <nav>
-            <!-- Barra de navegação -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div id="menuPrincipal">
+            <p><strong>Apostila JavaScript - Home</strong></p>
+        </div>   
     </header>
 
     <!-- Conteúdo principal da página -->
     <main>
-        <section id="home">
-            <div>
-            <h1>Bem-vindo ao meu site!</h1>
-            <p>Este é o conteúdo da seção home.</p>
-            </div>
-        </section>
-        
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Informações sobre o site ou o autor.</p>
-        </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Detalhes para entrar em contato.</p>
-        </section>
+            <div id="divCodigos">
+            <center>
+            <h1 id="textoMaiusculo">Texto Aqui</h1>
+            <pre><code>const alteraMaiusculo = document.getElementById("textoMaiusculo")</code>
+            <code>alteraMaiusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</code></pre>
+            </center>    
+            </div>
+
+            <div id="divCodigos">
+            <center>
+            <h1 id="textoMinusculo"></h1>
+            <pre><code>const alteraMinusculo = document.getElementById("textoMinusculo")</code>
+            <code>alteraMinusculo.textContent = "Texto em Maíusculo".toLocaleUpperCase()</code></pre>
+            </center>    
+
+            </div>
+
+                    
     </main>
 
     <!-- Rodapé da página -->
     <footer>
-        <p>&copy; Apostila JavaScript Pedro Brunel.</p>
+        <center><p>&copy; Apostila JavaScript Pedro Brunel.</p></center>
     </footer>
 
 </body>
