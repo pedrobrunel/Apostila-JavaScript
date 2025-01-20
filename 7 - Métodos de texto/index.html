@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com versões antigas do IE -->
-    <title>Título da Página</title> <!-- Título que aparece na aba do navegador -->
+    <title>Métodos de Texto</title> <!-- Título que aparece na aba do navegador -->
     
     <!-- Links para arquivos externos (CSS, fontes, ícones, etc.) -->
     <link rel="stylesheet" href="../css/estilo.css"> <!-- Estilos CSS externos -->
@@ -58,8 +58,81 @@
             </center>
             </div>            
 
+            <div id="divCodigos">
+            <center>
+            <h1 id="substituirTexto"></h1>
+            <p>let mensagemSubstituir = "Vamos trocar a palavra"</p>
+            <p>const alteraH1Substituir = document.getElementById("substituirTexto")</p>
+            <p>alteraH1Substituir.textContent = mensagemSubstituir.replace("trocar","alterar")</p>
+            </center>
+            </div> 
 
+            <div id="divCodigos">
+            <center>
+            <h1 id="cortarTexto"></h1>
+            <p>let mensagemCortar = "Essa mensagem foi cortada"</p>
+            <p>const alteraH1Cortar = document.getElementById("cortarTexto")</p>
+            <p>alteraH1Cortar.textContent = mensagemCortar.slice(3, 24)</p>
+            </center>
+            </div> 
 
+            <div id="divCodigos">
+            <center>
+            <h1 id="cortarTextoTras"></h1>
+            <p>let mensagemCortarDeTras = "Dá para cortar de trás pra frente"</p>
+            <p>const alteraH1CortarTras = document.getElementById("cortarTextoTras")</p>
+            <p>alteraH1CortarTras.textContent = mensagemCortarDeTras.slice(-27)</p>
+            </center>
+            </div>      
+            
+            <div id="divCodigos">
+                <center>
+                <h1 id="tirarEspacoEmBranco"></h1>
+                <p>let mensagemComEspacoBranco = "    Espaço em Branco no começo ou fina    l"</p>
+                <p>const alterarH1ComEspacoBranco = document.getElementById("tirarEspacoEmBranco")</p>
+                <p>alterarH1ComEspacoBranco.textContent = mensagemComEspacoBranco.trim()</p>
+                </center>
+            </div>   
+
+            <div id="divCodigos">
+                <center>
+                <h1 id="adicionarTamanhoString1"></h1>
+                <p>let numeroBase1 = "12345"</p>
+                <p>const numeroAumentado1 = (numeroBase1.padEnd(10, "#"))</p>
+                <p>const alteraH1TamanhoString1 = document.getElementById("adicionarTamanhoString1")</p>
+                <p>alteraH1TamanhoString1.textContent = `Aumentou: ${numeroAumentado1}`</p>
+                </center>
+            </div> 
+
+            <div id="divCodigos">
+                <center>
+                <h1 id="adicionarTamanhoString2"></h1>
+                <p>let numeroBase2 = "12345"<p>
+                <p>const numeroAumentado2 = (numeroBase2.padStart(10, "#"))</p>
+                <p>const alteraH1TamanhoString2 = document.getElementById("adicionarTamanhoString2")</p>
+                <p>alteraH1TamanhoString2.textContent = `Aumentou: ${numeroAumentado2}`</p>
+                </center>
+            </div> 
+
+            <div id="divCodigos">
+                <center>
+                <h1 id="taparString1"></h1>
+                <p>let mensagemTapada1 = "Pedro Antônio"</p>
+                <p>const naoTapar1 = mensagemTapada1.slice(6)</p>
+                <p>const alterarH1MensagemTapada1 = document.getElementById("taparString1")</p>
+                <p>alterarH1MensagemTapada1.textContent = naoTapar1.padStart(mensagemTapada1.length, "*")</p>
+                </center>
+            </div> 
+            
+            <div id="divCodigos">
+                <center>
+                <h1 id="taparString2"></h1>
+                <p>let mensagemTapada2 = "Pedro Antônio"</p>
+                <p>const naoTapar2 = mensagemTapada2.slice(0, 5)</p>
+                <p>const alterarH1MensagemTapada2 = document.getElementById("taparString2")</p>
+                <p>alterarH1MensagemTapada2.textContent = naoTapar2.padEnd(mensagemTapada2.length, "*")</p>
+                </center>
+            </div>
 
                     
     </main>
